@@ -1,0 +1,9 @@
+.nav-item:hover
+{
+text-decoration: underline;
+}
+
+.nodrop::after
+{
+    content: none;
+}
