@@ -1,0 +1,5 @@
+.hovercard:hover
+{
+    text-decoration: underline;
+    text-decoration-color: black;
+}

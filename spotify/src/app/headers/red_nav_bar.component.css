@@ -7,3 +7,8 @@ text-decoration: underline;
 {
     content: none;
 }
+
+.hoverline:hover
+{
+    text-decoration: underline;
+}
