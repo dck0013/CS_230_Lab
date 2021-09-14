@@ -1,5 +1,43 @@
-.hovercard:hover
+.container
+{
+    padding: 0 0 0 60; 
+    width: 600px; 
+    align-items: center; 
+    margin-left: 148px; 
+    color: black;
+}
+.cardSlot
+{
+    text-decoration: none;
+}
+.cardImg
+{
+    height: 280px; 
+    width: 280px; 
+    padding: 40 0 0 300;
+    align-items: center;
+}
+.cardInfo
+{
+    list-style: none; 
+    text-align: center; 
+    font-family: Helvetica for Target, HelveticaForTarget, Targetica, HelveticaNeue for Target, Helvetica Neue, Helvetica, Arial, sans-serif;;
+     margin-left: -325px;
+}
+.cardInfo:hover
 {
     text-decoration: underline;
     text-decoration-color: black;
+}
+.cardTitle
+{
+    font-size: 25px; 
+    color: #333333; 
+    text-decoration: none;
+}
+.cardSub
+{
+    font-size: 15px; 
+    line-height: 16px; 
+    color: black;
 }

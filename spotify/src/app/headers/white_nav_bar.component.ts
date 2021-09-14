@@ -6,5 +6,6 @@ import {Component} from "@angular/core";
     styleUrls: ['./white_nav_bar.component.css']
 })
 export class WhiteNavBarComponent {
-
+    currentCity = "Morgantown"
+    storeTime = "closes at 5pm"
 }

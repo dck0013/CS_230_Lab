@@ -6,6 +6,7 @@ import { DiscountCardComponent } from './body/discount_card.component';
 import { SummerSaleComponent } from './body/summer_sale.component';
 import { RedNavBarComponent } from './headers/red_nav_bar.component'
 import { WhiteNavBarComponent } from './headers/white_nav_bar.component'
+import { LayoutComponent } from './layout.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { WhiteNavBarComponent } from './headers/white_nav_bar.component'
     RedNavBarComponent,
     WhiteNavBarComponent,
     SummerSaleComponent,
-    DiscountCardComponent
+    DiscountCardComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule

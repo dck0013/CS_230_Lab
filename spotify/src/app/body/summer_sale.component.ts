@@ -6,5 +6,6 @@ import {Component} from "@angular/core";
     styleUrls: ['./summer_sale.component.css']
 })
 export class SummerSaleComponent {
-
+    salePercent = "25%"
+    saleItems:string = "Select Clothes"
 }

@@ -1,15 +1,77 @@
+.container
+{
+    padding-left: 60px;
+}
+.backgroundImg
+{
+    width:1200px;
+    height:500px;
+    alt: "";
+}
 .centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -40%);
 }
-
-.bruh {
+.mainBox {
     text-decoration: none;
     color: #776273;
 }
 
-.bruh:hover {
+.mainBox:hover {
     text-decoration: underline;
+    text-decoration-color: #776273;
+}
+.mainBoxList
+{
+    list-style: none; 
+    text-align: center;
+}
+.percentOff
+{
+    font-size: 90px;
+    color: #776273;
+    align-content: center; 
+    font-family: Helvetica for Target, HelveticaForTarget, Targetica, HelveticaNeue for Target, Helvetica Neue, Helvetica, Arial, sans-serif; 
+    height: 115px; 
+    position: relative;
+}
+.saleItem
+{
+    font-size: 30px; 
+    color: black; 
+    align-content: center; 
+    font-family: Helvetica for Target, HelveticaForTarget, Targetica, HelveticaNeue for Target, Helvetica Neue, Helvetica, Arial, sans-serif; 
+    line-height: 35px;
+}
+.targetLogo
+{
+    width:30px;
+    height:50px;
+    color: white; 
+    fill:#cc0000
+}
+.wordWith
+{
+    color: #cc0000; 
+    font-size: 22px; 
+    text-decoration: none;
+}
+.noUd
+{
+    text-decoration: none;
+}
+.noUd:hover
+{
+    text-decoration: underline;
+    text-decoration-color: #776273;
+}
+.dealButton
+{
+    background-color: white; 
+    border-radius: 4px; 
+    height: 48px; 
+    font-family: Helvetica for Target, HelveticaForTarget, Targetica, HelveticaNeue for Target, Helvetica Neue, Helvetica, Arial, sans-serif; 
+    border-width: 1px;
 }

@@ -1,4 +1,67 @@
-.bruh:hover
+.bg-light
 {
-text-decoration: underline;
+    background-color: white;
+}
+.ml-auto
+{
+    align-content: flex-end; 
+    font-family: Targetica, Helvetica Neue, Helvetica, Arial, sans-serif; 
+    height: 30px; 
+    align-items: center; 
+    text-align: right; 
+    list-style-position: inside;
+}
+.locationTime
+{
+    list-style-type: none; 
+    text-align: left; 
+    font-family: Targetica, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.timeOuter
+{
+    font-size: 12px;
+}
+.timeInner
+{
+    text-decoration: none; 
+    color: grey;
+}
+.locationOuter
+{
+    font-size: 14px; color: gray
+}
+.locationInner
+{
+    text-decoration: none; 
+    color: grey;
+}
+.bi-suit-heart
+{
+    width: 12px; 
+    height: 12px;
+    fill: currentColor;
+}
+.darrow
+{
+    font-family: Targetica, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.rightItem:hover
+{
+    text-decoration: underline;
+}
+.firstItem
+{
+    padding-left: 700px;
+}
+.moreDrop
+{
+    right:0;
+}
+.dropdown-menu
+{
+    left: -170px;
+}
+.nodrop::after
+{
+    content: none;
 }
