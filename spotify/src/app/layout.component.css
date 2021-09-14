@@ -1,4 +1,18 @@
-.container
+.summerSaleFlex
 {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+.summerSale
+{
+    flex-shrink: 2;
+    flex-basis: auto;
+}
+.discountCardFlex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
