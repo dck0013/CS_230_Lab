@@ -1,0 +1,24 @@
+.giftTitle
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 65px;
+    width: 1536px;
+    padding-top: 10px;
+}
+.headerTitle
+{
+    font-size: 30px;
+    font-family: Targetica, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+}
+.headerSub
+{
+    font-size: 14px;
+    line-height: 20px;
+}
+.Link
+{
+    color: rgb(51, 51, 51);
+}

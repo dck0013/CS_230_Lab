@@ -1,0 +1,14 @@
+div
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 65px;
+    width: 1536px;
+    padding-top: 20px;
+}
+.box
+{
+    height: 75px;
+
+}

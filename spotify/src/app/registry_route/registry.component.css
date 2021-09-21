@@ -5,17 +5,38 @@
     justify-content: space-between;
     height: 65px;
     background-color: #fceaec;
+    width: 1536px;
     
+}
+.left_logo
+{
+    float: left;
 }
 .box
 {
-    height: 55px;
-    padding-top: 10px;
+    height: 65px;
+    padding-bottom: 18px;
+    padding-right: 15px;
 }
 .left_word
 {
-    font-size: 35px;
-    font-family: "Helvetica for Target, HelveticaForTarget, Targetica, HelveticaNeue for Target", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-family: Targetica, Helvetica Neue, Helvetica, Arial, sans-serif;
     color: rgb(51, 51, 51);
     text-emphasis: bold;
+    line-height: 62px;
+}
+.right_stuff
+{
+    line-height: 62px;
+    width: 290px;
+}
+.registryLady
+{
+    object-fit: fill;
+    max-width: 1536px;
+}
+.Link
+{
+    color: rgb(51, 51, 51);
 }
