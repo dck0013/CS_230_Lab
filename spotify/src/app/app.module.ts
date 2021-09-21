@@ -5,9 +5,15 @@ import { AppComponent } from './app.component';
 import { CircleCardComponent } from './body/circle_card.component';
 import { DiscountCardComponent } from './body/discount_card.component';
 import { SummerSaleComponent } from './body/summer_sale.component';
-import { RedNavBarComponent } from './headers/red_nav_bar.component'
-import { WhiteNavBarComponent } from './headers/white_nav_bar.component'
+import { FindStoresComponent } from './find_stores_route/find_stores.component';
+import { GiftCardsComponent } from './gift_cards_route/gift_cards.component';
+import { RedNavBarComponent } from './headers/red_nav_bar.component';
+import { WhiteNavBarComponent } from './headers/white_nav_bar.component';
 import { LayoutComponent } from './layout.component';
+import { RedCardComponent } from './redcard_route/redcard.component';
+import { RegistryComponent } from './registry_route/registry.component';
+import { AppRoutingModule } from './app-routing.module';
+import { WeeklyAdComponent } from './weekly_ad_route/weekly_ad.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +23,17 @@ import { LayoutComponent } from './layout.component';
     SummerSaleComponent,
     DiscountCardComponent,
     LayoutComponent,
-    CircleCardComponent
+    CircleCardComponent,
+    GiftCardsComponent,
+    RedCardComponent,
+    RegistryComponent,
+    FindStoresComponent,
+    WeeklyAdComponent
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

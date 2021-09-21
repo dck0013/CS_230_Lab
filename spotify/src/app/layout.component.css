@@ -16,9 +16,17 @@
     flex-direction: row;
     justify-content: center;
 }
+.discountCard
+{
+padding: 0px 20px 0px 20px;
+}
 .circleCardFlex
 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+.circleCard
+{
+padding: 0px 30px 0px 30px;
 }

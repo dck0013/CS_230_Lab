@@ -1,6 +1,9 @@
 .bg-light
 {
+    display: flex;
+    flex-direction: row;
     background-color: white;
+    line-height: 10px;
 }
 .ml-auto
 {
@@ -13,9 +16,11 @@
 }
 .locationTime
 {
+    align-content: flex-end;
     list-style-type: none; 
     text-align: left; 
     font-family: Targetica, Helvetica Neue, Helvetica, Arial, sans-serif;
+    line-height: 15px;
 }
 .timeOuter
 {
@@ -45,13 +50,20 @@
 {
     font-family: Targetica, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+.rightList
+{
+    display: inline-flex;
+    list-style-type: none;
+    align-self: flex-end; 
+    padding-left: 710px;
+}
 .rightItem:hover
 {
     text-decoration: underline;
 }
 .firstItem
 {
-    padding-left: 700px;
+    align-items: flex-end;
 }
 .moreDrop
 {
