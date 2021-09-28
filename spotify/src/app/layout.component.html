@@ -9,8 +9,8 @@
 </div>
 
 <div class="container-fluid circleCardFlex">
-    <circle_card class="circleCard">circle</circle_card>
-    <circle_card class="circleCard">circle</circle_card>
-    <circle_card class="circleCard">circle</circle_card>
+    <div class = "m-2" *ngFor = "let circleCard of circleCards;">
+        <circle_card image = {{circleCard.image}} title = {{circleCard.title}}>circle</circle_card>
+    </div>
 </div>
 <router-outlet></router-outlet>

@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+import {Component, Input} from "@angular/core";
 
 @Component({
     selector: 'circle_card',
@@ -6,5 +6,9 @@ import {Component} from "@angular/core";
     styleUrls: ['./circle_card.component.css']
 })
 export class CircleCardComponent {
-
+    @Input()
+    title! :string;
+    @Input()
+    image! :string;
+   
 }
