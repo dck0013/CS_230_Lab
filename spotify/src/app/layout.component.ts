@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DiscountCard } from './body/discount_card.model';
+import { mock_discount_cards } from './body/mock-discount_cards';
 
 @Component({
   selector: 'layout',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./layout.component.css']
 })
 export class LayoutComponent {
+    discountCards:DiscountCard[] = [];
+
+    constructor() {
+        for(var discountCard of mock_discount_cards) {
+            this.discountCards.push(new DiscountCard(discountCard))
+        }
+    }
+
     
 }

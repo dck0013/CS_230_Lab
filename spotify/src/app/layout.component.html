@@ -2,9 +2,10 @@
     <summer_sale class="summerSale">summer</summer_sale>
 </div>
 
-<div class="container-fluid discountCardFlex">
-    <discount_card class="discountCard">discount</discount_card>
-    <discount_card class="discountCard">discount</discount_card>
+<div class="container-fluid discountCardFlex ">
+    <div class="m-3" *ngFor="let discountCard of discountCards;">
+        <discount_card title = {{discountCard.title}} subtext = {{discountCard.subtext}} image = {{discountCard.image}}>discount</discount_card>
+    </div>
 </div>
 
 <div class="container-fluid circleCardFlex">
