@@ -14,6 +14,8 @@ import { RedCardComponent } from './redcard_route/redcard.component';
 import { RegistryComponent } from './registry_route/registry.component';
 import { AppRoutingModule } from './app-routing.module';
 import { WeeklyAdComponent } from './weekly_ad_route/weekly_ad.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './headers/user-info.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +30,14 @@ import { WeeklyAdComponent } from './weekly_ad_route/weekly_ad.component';
     RedCardComponent,
     RegistryComponent,
     FindStoresComponent,
-    WeeklyAdComponent
+    WeeklyAdComponent,
+    UserInfoComponent
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
