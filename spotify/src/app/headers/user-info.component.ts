@@ -1,9 +1,9 @@
 import { HttpClient } from "@angular/common/http";
-import {Component, Injectable} from "@angular/core";
+import { Component, Injectable } from "@angular/core";
 import { OnInit } from "@angular/core";
 import { UserInfo } from "./user-info.model";
+import { UserInfoService } from "./user-info.service";
 
-@Injectable()
 @Component({
     selector: 'user-info',
     templateUrl: './user-info.component.html'
@@ -11,25 +11,18 @@ import { UserInfo } from "./user-info.model";
 export class UserInfoComponent {
     myInfo: UserInfo | undefined;
 
-    constructor(private http:HttpClient) {
+    constructor(private infoService: UserInfoService) {
     }
 
-ngOnInit(): void {
-    console.log('Sending get request');
-    this.getUserInfo();
-    console.log('showing data');
-    this.showUserInfo();
-}
+    ngOnInit(): void {
+        console.log('showing data');
+        this.showUserInfo();
+    }
 
-getUserInfo() {
-    return this.http.get<UserInfo>("https://target-app-e3f96-default-rtdb.firebaseio.com/my-info.json")
-}
-
-showUserInfo() {
-    this.getUserInfo().subscribe((data: UserInfo) => {
-        console.log(data);
-        this.myInfo = data;
-    })
-}
-
+    showUserInfo() {
+        this.infoService.getUserInfo().subscribe((data: UserInfo) => {
+            console.log(data);
+            this.myInfo = data;
+        })
+    }
 }

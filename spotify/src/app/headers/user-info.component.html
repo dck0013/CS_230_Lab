@@ -1,16 +1,16 @@
-<p *ngIf = "myInfo == undefined">failed fetching data from server</p>
-<div *ngIf = "myInfo != undefined">
-   <div class="container-fluid">
-       <div class="d-flex flex-row justify-content-between">
-           <div class="flex-column">
-               User: {{myInfo.FirstName}} {{myInfo.LastName}}
-           </div>
-           <div class="flex-column">
-               Mix ID: {{myInfo.mix_id}}@mix.wvu.edu
-           </div>
-           <div class="flex-column">
-               <a href={{myInfo.Github}}>GitHub: {{myInfo.Github}}</a>
-           </div>
-       </div>
-   </div>
+<p *ngIf="myInfo == undefined">failed fetching data from server</p>
+<div *ngIf="myInfo != undefined">
+    <div class="container-fluid">
+        <div class="d-flex flex-row justify-content-between">
+            <div class="flex-column">
+                User: {{myInfo.FirstName}} {{myInfo.LastName}}
+            </div>
+            <div class="flex-column">
+                Mix ID: {{myInfo.mix_id}}@mix.wvu.edu
+            </div>
+            <div class="flex-column">
+                <a href={{myInfo.Github}}>GitHub: {{myInfo.Github}}</a>
+            </div>
+        </div>
+    </div>
 </div>
