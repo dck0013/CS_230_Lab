@@ -14,17 +14,10 @@ import { LayoutService } from './layout.service';
 export class LayoutComponent {
     discountCards:DiscountCard[] = [];
     circleCards:CircleCard[] = [];
-    print:DiscountCard[] = [];
+    print:Object = [];
 
     constructor(private layoutService: LayoutService) {
         this.storeDiscountCards();
-
-        for(let i = 0; i < 4; i++) {
-            this.discountCards[i] =  {image: "../assets/delightfulDecor.png",
-            title: "Delightful Decor",
-            subtext: "Breeze into new fave looks for Fall."};
-        }
-        console.log(this.discountCards);
 
         for(var circleCard of mock_circle_cards) {
             this.circleCards.push(new CircleCard(circleCard))
@@ -34,9 +27,18 @@ export class LayoutComponent {
     DCcards: DiscountCard | undefined;
 
     storeDiscountCards() {
-        this.layoutService.getDiscountCards().subscribe((data: DiscountCard) => {
-            console.log(data);
-            this.print.push(data);
+        this.layoutService.getDiscountCard1().subscribe((data: DiscountCard) => {
+            this.discountCards[0] = data; 
         })
+        this.layoutService.getDiscountCard2().subscribe((data: DiscountCard) => {
+            this.discountCards[1] = data; 
+        })
+        this.layoutService.getDiscountCard3().subscribe((data: DiscountCard) => {
+            this.discountCards[2] = data; 
+        })
+        this.layoutService.getDiscountCard4().subscribe((data: DiscountCard) => {
+            this.discountCards[3] = data; 
+        })
+        console.log(this.discountCards);
     }
 }
