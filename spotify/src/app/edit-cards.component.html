@@ -1,0 +1,12 @@
+<div class="container-fluid formInput">
+    <form #postForm = "ngForm" (ngSubmit) = "onEditDiscountCard1(postForm.value)">
+        <p>Change Card 1</p>
+        <label for="image">Image:</label><br>
+        <input class="form-control" type="text" id="image" ngModel name="image"><br>
+        <label for="title">Title:</label><br>
+        <input class="form-control" type="text" id="title" ngModel name="title"><br>
+        <label for="subtext">Subtext:</label><br>
+        <input class="form-control" type="text" id="subtext" ngModel name="subtext"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>

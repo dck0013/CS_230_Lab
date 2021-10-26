@@ -4,6 +4,7 @@ import { DiscountCard } from './body/discount_card.model';
 import { DiscountCardService } from './body/discount_card.service';
 import { mock_circle_cards } from './body/mock-circle_cards';
 import { mock_discount_cards } from './body/mock-discount_cards';
+import { EditCardsComponent } from './edit-cards.component';
 import { LayoutService } from './layout.service';
 
 @Component({
@@ -17,6 +18,7 @@ export class LayoutComponent {
     print:Object = [];
 
     constructor(private layoutService: LayoutService) {
+
         this.storeDiscountCards();
 
         for(var circleCard of mock_circle_cards) {

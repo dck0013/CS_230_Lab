@@ -16,6 +16,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { WeeklyAdComponent } from './weekly_ad_route/weekly_ad.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './headers/user-info.component';
+import { EditCardsComponent } from './edit-cards.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,13 +33,15 @@ import { UserInfoComponent } from './headers/user-info.component';
     RegistryComponent,
     FindStoresComponent,
     WeeklyAdComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    EditCardsComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
