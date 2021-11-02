@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "target-app-e3f96": {
+      "hosting": {
+        "spotify": [
+          "target-app-e3f96"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "target-app-e3f96"
+  }
+}
