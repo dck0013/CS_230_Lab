@@ -26,12 +26,11 @@ export class AuthComponent {
             this.authObservable = this.authService.login(data.value.email, data.value.password);
         }
         
-        
-        
         this.authObservable.subscribe((data:AuthResponse) => {
             console.log(data);
+            alert("Successfully Logged In.")
         }, error => {
-            console.log(error.error.error.message)
+            alert(error.error.error.message)
         });
 
         data.resetForm();
